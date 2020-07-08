@@ -344,8 +344,8 @@
     }
 }
 @media all and (max-width: 767px) {
-    #sign-in img{
-        width: 90%;
+    #sign-up img{
+        width: 80%;
         position: relative;
         left: 40px;
       
@@ -354,9 +354,6 @@
 @media all and (max-width: 385px) {
     .top-left h1{
         font-size: 27px;
-    }
-    #sign-in img{
-        width: 80%;
     }
 }
 /*Responsive Design Close*/
