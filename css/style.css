@@ -18,7 +18,21 @@
     font-weight: bold;
     color: #000;
 }
-
+.navbar .nav-item .sign-in{
+    padding: 6px 20px;
+    background-color: #21B573;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid #21B573;
+    transition: 0.5s;
+    -webkit-transition: 0.5s; 
+}
+.navbar .nav-item .sign-in:hover{
+    background-color: #fff;
+    color: #000;
+}
 /*nav section close*/
 
 /*top banner section start*/
@@ -336,7 +350,6 @@
 /*Footer Section close*/
 
 /*Responsive Design start*/
-
 @media all and (max-width: 992px) {
     .top-left h1{
         font-size: 35px;
