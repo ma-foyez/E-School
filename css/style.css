@@ -9,11 +9,9 @@
 }
 
 /*nav section start*/
-
 .navbar .navbar-brand img {
     height: 50px;
 }
-
 .navbar .nav-item .nav-link {
     font-weight: bold;
     color: #000;
@@ -29,26 +27,22 @@
     transition: 0.5s;
     -webkit-transition: 0.5s; 
 }
+/*nav section close*/
+
+/*top banner section start*/
 .navbar .nav-item .sign-in:hover{
     background-color: #fff;
     color: #000;
 }
-/*nav section close*/
-
-/*top banner section start*/
-
 .top-left h5 {
     color: #FD511A;
 }
-
 .top-left h1 {
     font-weight: 900;
 }
-
 .top-left .top-heighlight {
     color: #21B573;
 }
-
 .sub-btn {
     padding: 10px 20px;
     background-color: #21B573;
@@ -60,24 +54,19 @@
     transition: 0.5s;
     -webkit-transition: 0.5s;
 }
-
 .sub-btn:focus {
     outline: none;
 }
-
 .sub-btn:hover {
     background-color: #fff;
     color: #000;
 }
-
 /*top banner section close*/
 
 /*items section start*/
-
 #others img {
     height: 76px;
 }
-
 .item {
     text-align: center;
     padding: 20px;
@@ -88,7 +77,6 @@
     -webkit-transition: 0.5s;
     cursor: pointer;
 }
-
 .active-hover {
     box-shadow: 0px 0px 20px lightgrey;
     text-align: center;
@@ -101,11 +89,9 @@
     -webkit-transition: 0.5s;
     cursor: pointer;
 }
-
 .item h5, .active-hover h5 {
     margin-top: 20px;
 }
-
 .item:hover {
     box-shadow: 0px 0px 20px lightgrey;
     background-color: #fff;
@@ -117,7 +103,6 @@
     text-align: center;
     font-weight: 900;
 }
-
 .card {
     border: none;
     box-shadow: 0px 0px 20px lightgrey;
@@ -125,31 +110,25 @@
     margin-bottom: 20px;
     margin-right: 10px;
 }
-
 .card .card-img-top {
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
 }
-
 .card-bottom img {
     height: 25px;
     margin-right: 8px;
 }
-
 .card .card-title {
     font-weight: 800;
 }
-
 .card-bottom p {
     font-size: 15px;
     font-weight: bold;
 }
-
 /*Course section start*/
 
 /*Course trainer section start*/
-
 #trainers h1{
     text-align: center;
     font-weight: 900;
@@ -204,7 +183,6 @@
     font-size: 20px;
     border-radius: 50%;
 }
-
 .img-box ul{
     padding: 15px 0;
     position: absolute;
@@ -228,27 +206,22 @@
 /*Course trainer section Close*/
 
 /*Testimonial Section Start*/
-
 #testimonial {
     width: 70%;
     margin: 0 auto;
 }
-
 #testimonial h3 {
     text-align: center;
     font-weight: 900;
 }
-
 #testimonial img {
     width: 80%;
 }
-
 /*Testimonial Section Close*/
 
 /*sign in section start*/
-
-#sign-in {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/Photos/Library.jpg");
+#sign-up {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/Photos/Library.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -265,7 +238,6 @@
     text-align: center;
 }
 .form h3{
-    text-align: center;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
 }
@@ -281,14 +253,13 @@
     font-size: 20px;
 }
 .input-group input{
-    background: none;
     border: none;
     margin-left: 25px;
     width: 80%;
+    background: transparent;
 }
 .input-group input:focus{
     outline: none;
-    background: none;
 }
 .input-group input::placeholder{
     color: #000;
