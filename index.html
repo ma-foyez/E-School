@@ -17,8 +17,8 @@
 <body>
     <!--Nav section start-->
     <header id="nav-section">
-        <div class="container p-2">
-            <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/ICON/Logo.png" alt="logo">
                 </a>
@@ -51,8 +51,8 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <!--Nav section close-->
     <!--Top Banner section start-->
@@ -155,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-12 course">
+            <div class="col-lg-4 col-md-12 d-lg-block d-md-none course">
                 <div class="card card-2" style="width: 20rem;">
                     <img class="card-img-top" src="images/Photos/Morder pychons.png" alt="Card Imgae" />
                     <div class="card-body">
@@ -275,7 +275,7 @@
                 <div class="col-md-6 d-flex align-items-center justify-content-center pb-5">
                     <div class="form">
                         <h3>Sign Up</h3>
-                        <form action="" class="sub-form">
+                        <form action="">
                             <div class="input-group mt-5">
                                 <span class="icon">
                                     <i class="far fa-user"></i>
@@ -292,7 +292,8 @@
                                 <span class="icon">
                                     <i class="fas fa-lock-open"></i>
                                 </span>
-                                <input type="password" name="" id="" placeholder="Password" required>
+                                <input type="password" name="" class="password" id="password" placeholder="Password" required>
+                                <small class="hide-btn" onclick="Hide()" id="hidden">Hide</small>
                             </div>
                             <div class="check-box pt-4 pb-4">
                                 <input type="checkbox" name="" id="">
@@ -347,21 +348,47 @@
             <p class="copy-right">Copyright &copy; 2020-2021 Programming-hero.com</p>
         </div>
     </footer>
-     <!--Sign in section Close-->
+    <!--Sign in section Close-->
+
+    <!--Top Scroll Button-->
+    <div class="top-scroll">
+        <i class="far fa-arrow-alt-circle-up"></i>
+    </div>
+    <div class="pre-loader">
+        <img src="images/page-loader.gif" alt="">
+    </div>
 
     <!--all jquary file import-->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
-        // JS function for items section hover effect
-        $(document).ready(function () {
-            $(".item").hover(function () {
-                $('#active-hover').css({ "box-shadow": "none", "background-color": "#F0FFF0" });
-            }, function () {
-                $('#active-hover').css({ "box-shadow": "0px 0px 20px lightgrey", "background-color": "#FFF" });
-            });
-        })
+        $(window).on('scroll', function () {
+            var WinScroll = $(window).scrollTop();
+            if (WinScroll > 200) {
+                $('.top-scroll').fadeIn(1000).addClass('active'), 1000;
+                $('.top-scroll').slideDown(1000);
+            }
+            else {
+                $('.top-scroll').fadeOut(1000).removeClass('active');
+            }
+        });
+
+        //============
+        function Hide() {
+            var x = document.getElementById("password");
+            var y = document.getElementById("hidden");
+            if (x.type === "password") {
+                x.type = "text";
+                y.innerHTML = "Hide";
+            } else {
+                x.type = "password";
+                y.innerHTML = "Show";
+
+            }
+        }
+
     </script>
 </body>
 
